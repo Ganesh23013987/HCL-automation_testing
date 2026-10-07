@@ -218,10 +218,6 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 
-# =====================================================
-# START BROWSER
-# =====================================================
-
 driver = webdriver.Edge()
 driver.maximize_window()
 
