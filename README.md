@@ -202,5 +202,5 @@ input("Press Enter to close browser...")
 
 driver.quit()
 ```
-<img width="1920" height="1079" alt="image" src="https://github.com/user-attachments/assets/cf581943-b932-4deb-afb3-7d5f42de87d2" />
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/cf581943-b932-4deb-afb3-7d5f42de87d2" />
 
