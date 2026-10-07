@@ -11,7 +11,7 @@
 ## 1. How do you automate filling out the Vinoth QA Academy demo form using Selenium WebDriver in Python, including entering text, selecting radio buttons and checkboxes, and handling form fields?
 ### CODE :
 
-```
+```python
 rom selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
@@ -64,7 +64,7 @@ driver.quit()
 
 ### code:
 
-```
+```python
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -209,7 +209,7 @@ driver.quit()
 
 ### Code:
 
-```
+```python
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
