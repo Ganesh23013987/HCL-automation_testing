@@ -1,13 +1,13 @@
 # HCL_Automation_Testing
 
-## 05-10-2026 :
+## Date: 05-10-2026 :
 #### Project 1: Google Search – Open Actor Simbu Search Results
 
 #### Project 2: SauceDemo Login and Product Listing
 
 #### Project 3: OTP-Based Login Automation – Flipkart QA Approach
 
-## 06-10-26 TASK - 1:
+## Date: 05-10-26 TASK - 1:
 ## How do you automate filling out the Vinoth QA Academy demo form using Selenium WebDriver in Python, including entering text, selecting radio buttons and checkboxes, and handling form fields?
 ### CODE :
 
