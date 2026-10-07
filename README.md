@@ -75,131 +75,60 @@ driver = webdriver.Edge()
 driver.maximize_window()
 
 wait = WebDriverWait(driver, 20)
-
-# Open Amazon
 driver.get("https://www.amazon.in/")
 
-
-# Click Account & Lists
-login = wait.until(
-    EC.element_to_be_clickable(
-        (By.CLASS_NAME, "nav-line-1-container")
-    )
-)
+login = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "nav-line-1-container")))
 login.click()
 
-
-# Enter mobile number
 phone=driver.find_element(By.ID, "ap_email_login")
 phone.send_keys("7810048370")
 
-
-# Click Continue
-cont = wait.until(
-    EC.element_to_be_clickable(
-        (By.CLASS_NAME, "a-button-input")
-    )
-)
+cont = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "a-button-input")))
 cont.click()
-
 time.sleep(3)
 
-# Enter password
 password=driver.find_element(By.NAME, "password")
 password.send_keys("gany&diny")
 
-
-# Click Sign In
-signin = wait.until(
-    EC.element_to_be_clickable(
-        (By.ID, "signInSubmit")
-    )
-)
+signin = wait.until(EC.element_to_be_clickable((By.ID, "signInSubmit")))
 signin.click()
 
 print("Login successful")
 
-
-# Search Mens shoes
-search = wait.until(
-    EC.visibility_of_element_located(
-        (By.ID, "twotabsearchtextbox")
-    )
-)
-
+search = wait.until(EC.visibility_of_element_located((By.ID, "twotabsearchtextbox")))
 search.send_keys("5G mobiles")
 
-
-# Click Search
-search_button = wait.until(
-    EC.element_to_be_clickable(
-        (By.ID, "nav-search-submit-button")
-    )
-)
+search_button = wait.until(EC.element_to_be_clickable((By.ID, "nav-search-submit-button")))
 search_button.click()
 
 print("Product searched")
-
 time.sleep(4)
 
 
-# Find Add to Cart buttons
-buttons = driver.find_elements(
-    By.XPATH,
-    '//button[@aria-label="Add to cart"]'
-)
+buttons = driver.find_elements(By.XPATH,'//button[@aria-label="Add to cart"]')
 print("Add to cart buttons found: 1")
 
-
-# Click first available Add to Cart button
 print("enabled Add to cart button found.")
-
-
 time.sleep(3)
 
-
-# Open Cart
 driver.get("https://www.amazon.in/gp/cart/view.html")
-
 print("Cart opened")
-
 time.sleep(4)
 
-
-# Click Checkout
-checkout = wait.until(
-    EC.element_to_be_clickable(
-        (By.NAME, "proceedToRetailCheckout")
-    )
-)
-
+checkout = wait.until(EC.element_to_be_clickable((By.NAME, "proceedToRetailCheckout")))
 checkout.click()
 
 print("Checkout opened")
-
 time.sleep(5)
 
-
-# Select Payment Method
 try:
-
-    payment = wait.until(
-        EC.element_to_be_clickable(
-            (By.NAME, "ppw-instrumentRowSelection")
-        )
-    )
-
+    payment = wait.until(EC.element_to_be_clickable((By.NAME, "ppw-instrumentRowSelection")))
     payment.click()
-
     print("Payment method selected")
-
 except:
-
     print("Payment method was not found")
 
-
 input("Press Enter to close browser...")
-
 driver.quit()
 ```
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0eb8be20-dd73-41a5-be08-e65316d0b685" />
